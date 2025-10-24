@@ -1,5 +1,5 @@
-.history_section {
-  padding: 65px o 70px;
+.history{
+  padding: 65px 20px 70px;
   text-align: center;
   color: var(--color-main-black);
 }
@@ -24,7 +24,7 @@
 .history_description {
   font-weight: 500;
   font-size: 18;
-  margin: 30px 0 0 0;
+  margin: 30px 0 30px;
 }
 @media (max-width: 480px) {
     .history_section {
