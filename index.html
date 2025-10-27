@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/favicon.png">
 
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css">
     <title>Aivazovski</title>
   </head>
   <body>
@@ -39,12 +38,54 @@
         </div>
 
     </header>
+    <div class="mobile_navigation" aria-label="mobile navigation">
+        
+        
+        <label for="toggler-id"  aria-label="open-close mobile-navigation menu">
+            <svg class="mobile_navigation_burger" aria-label="burger icon">
+                <use href="assets/sprites.svg#burger-icon" ></use>
+            </svg>
+        </label>
+        <input type="checkbox" id="toggler-id" class="mobile_navigation_toggler">
+
+        <nav class="mobile_navigation_menu" aria-label="mob header navigation">
+            <ul class="mobile_navigation_list" aria-label="mob header navigation list">
+                <li>
+                    <a class="mobile_navigation_link" href="#home-id" aria-label="link to home" >Home</a>
+                </li>
+                <li>
+                    <a class="mobile_navigation_link" href="#about-id" aria-label="link to about">About</a>
+                </li>
+                <li>
+                    <a class="mobile_navigation_link" href="#history-id" aria-label="link to history">History</a>
+                </li>
+                <li>
+                    <a class="mobile_navigation_link" href="#portfolio-id" aria-label="link to portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a class="mobile_navigation_link" href="#contacts-id" aria-label="link to contacts">Contacts</a>
+                </li>
+            </ul>
+
+            <label for="toggler-id" class="mobile_navigation_close" aria-label="mobile navigation">
+                <svg class="mobile_navigation_burger" aria-label="burger icon">
+                    <use href="assets/sprites.svg#burger-icon" ></use>
+                </svg>
+            </label>
+
+        </nav>
+
+
+
+    </div>
+
+
     <main aria-label="main">
         <section class="home" aria-label="home section" id="home-id">
             <div class="container">
                 <h1 class="home_title" aria-label="title">Ivan Constantinovich Aivazovski</h1>
                 <p class="home-description" aria-label="description">Russian marine painter of Armenian origin, collector, philanthropist</p>
-                <img src="assets/webp/portrait 1.webp" alt="photo of Aivazovski" class="home_img">
+                <img src="assets/webp/portrait1.webp" alt="photo of Aivazovski" class="home_img">
             </div>
 
         </section>
@@ -67,19 +108,19 @@
         <section class="history" aria-label="history section" id="history-id">
             <div class="container">
                 <h2 class="history_title" aria-label="history title">History</h2>
-                <img src="assets/webp/дом_где_родился_айвазовский 1.webp" alt="photo" class="history_photo" aria-label="history photo">
+                <img src="assets/webp/дом_где_родился_айвазовский1.webp" alt="photo" class="history_photo" aria-label="history photo">
                 <p class="history_description">Дом в котором родился Айвазовский | The house where Aivazovsky was born </p>
             </div>
         </section>
         <section class="portfolio" aria-label="section portfolio" id="portfolio-id">
             <div class="container">
                 <h2 class="portfolio_title" aria-label="portfolio title">Portfolio</h2>
-                <img src="assets/webp/Зимний обоз в пути (картина Ивана Айвазовского, 1857) 1.webp" alt="Winter wagon train on the way," class="portfolio_picture">
-                <p class="portfolio_description" aria-label="picture 1 description">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857</p>
-                <img src="assets/webp/Айвазовский_Радуга_1873 1.webp" alt="Rainbow" class="portfolio_picture">
+                <img src="assets/webp/winter.webp" alt="Winter wagon train on the way," class="portfolio_picture">
+                <p class="portfolio_description" aria-label="picture 1 description">Зимниий обоз в пути, 1857 г. | Winter wagon train on the way, 1857</p>
+                <img src="assets/webp/Айвазовский_Радуга_18731.webp" alt="Rainbow" class="portfolio_picture">
                 <p class="portfolio_description" aria-label="picture 2 description" >Радуга, 1873 г. | Rainbow, 1873</p>
-                <img src="assets/webp/неаполитанский_залив_утром_1893 1.webp" alt=" of Naples in the morning" class="portfolio_picture">
-                <p class="portfolio_description" aria-label="picture 3 description" >Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
+                <img src="assets/webp/неаполитанский_залив_утром_18931.webp" alt=" of Naples in the morning" class="portfolio_picture">
+                <p class="portfolio_description" aria-label="picture 3 description" >Неаполитанскиий залив утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
             </div>
         </section>
 
@@ -87,9 +128,9 @@
     <footer class="contacts" aria-label="contacts section" id="contacts-id">
         <div class="container">
             <h2 class="contacts_title">Contacts</h2>
-            <button class="contacts_button" aria-label="contacts button">
-                <a href="https://ayvazovskiy.su" class="button_link" target="_blank">ayvazovskiy.su</a>
-            </button>
+            <a href="https://ayvazovskiy.su" class="contacts_button" target="_blank" aria-label="contacts button">
+                ayvazovskiy.su
+              </a>
             <address class="socials" aria-label="social icon">
                 <a href="https://youtube.com" target="_blank" aria-label="link to youtube">
                     <svg class="social_icon" aria-label="youtube icon">
@@ -121,7 +162,7 @@
                 </a>
 
             </address>
-            <p class="contacts_info" aria-label="just for notice">More works you can see in these social networks</p>
+            <p class="contacts_info">More works you can see in these social networks</p>
         </div>
 
     </footer>
